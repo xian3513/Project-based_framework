@@ -32,8 +32,9 @@
 		684F745E1AD60C7600FEEA63 /* MBOSecondPackageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F745A1AD60C7600FEEA63 /* MBOSecondPackageView.m */; };
 		684F74641AD60C8D00FEEA63 /* MBOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74611AD60C8D00FEEA63 /* MBOBaseViewController.m */; };
 		684F74651AD60C8D00FEEA63 /* MBOLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74631AD60C8D00FEEA63 /* MBOLotteryViewController.m */; };
-		684F74691AD60CAF00FEEA63 /* MenuModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74681AD60CAF00FEEA63 /* MenuModuleViewController.m */; };
+		684F74691AD60CAF00FEEA63 /* ShowModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74681AD60CAF00FEEA63 /* ShowModuleViewController.m */; };
 		684F746C1AD60E5700FEEA63 /* MBOModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F746B1AD60E5700FEEA63 /* MBOModelFactory.m */; };
+		684F74711AD612A200FEEA63 /* MoreModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74701AD612A200FEEA63 /* MoreModuleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,10 +96,12 @@
 		684F74611AD60C8D00FEEA63 /* MBOBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBOBaseViewController.m; sourceTree = "<group>"; };
 		684F74621AD60C8D00FEEA63 /* MBOLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBOLotteryViewController.h; sourceTree = "<group>"; };
 		684F74631AD60C8D00FEEA63 /* MBOLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBOLotteryViewController.m; sourceTree = "<group>"; };
-		684F74671AD60CAF00FEEA63 /* MenuModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModuleViewController.h; sourceTree = "<group>"; };
-		684F74681AD60CAF00FEEA63 /* MenuModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModuleViewController.m; sourceTree = "<group>"; };
+		684F74671AD60CAF00FEEA63 /* ShowModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowModuleViewController.h; sourceTree = "<group>"; };
+		684F74681AD60CAF00FEEA63 /* ShowModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowModuleViewController.m; sourceTree = "<group>"; };
 		684F746A1AD60E5700FEEA63 /* MBOModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBOModelFactory.h; sourceTree = "<group>"; };
 		684F746B1AD60E5700FEEA63 /* MBOModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBOModelFactory.m; sourceTree = "<group>"; };
+		684F746F1AD612A200FEEA63 /* MoreModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreModuleViewController.h; sourceTree = "<group>"; };
+		684F74701AD612A200FEEA63 /* MoreModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreModuleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				684F73F71AD60B9C00FEEA63 /* BaseFramework */,
-				684F746D1AD6103900FEEA63 /* New Group */,
 				684F74111AD60B9D00FEEA63 /* BaseFrameworkTests */,
 				684F73F61AD60B9C00FEEA63 /* Products */,
 			);
@@ -218,7 +220,8 @@
 		684F74231AD60BCE00FEEA63 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				684F74661AD60C9900FEEA63 /* Module1 */,
+				684F746E1AD6122000FEEA63 /* Module1_Show */,
+				684F74661AD60C9900FEEA63 /* Module2_More */,
 				684F745F1AD60C8000FEEA63 /* Base */,
 			);
 			name = Controllers;
@@ -301,20 +304,22 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
-		684F74661AD60C9900FEEA63 /* Module1 */ = {
+		684F74661AD60C9900FEEA63 /* Module2_More */ = {
 			isa = PBXGroup;
 			children = (
-				684F74671AD60CAF00FEEA63 /* MenuModuleViewController.h */,
-				684F74681AD60CAF00FEEA63 /* MenuModuleViewController.m */,
+				684F746F1AD612A200FEEA63 /* MoreModuleViewController.h */,
+				684F74701AD612A200FEEA63 /* MoreModuleViewController.m */,
 			);
-			name = Module1;
+			name = Module2_More;
 			sourceTree = "<group>";
 		};
-		684F746D1AD6103900FEEA63 /* New Group */ = {
+		684F746E1AD6122000FEEA63 /* Module1_Show */ = {
 			isa = PBXGroup;
 			children = (
+				684F74671AD60CAF00FEEA63 /* ShowModuleViewController.h */,
+				684F74681AD60CAF00FEEA63 /* ShowModuleViewController.m */,
 			);
-			name = "New Group";
+			name = Module1_Show;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				684F745B1AD60C7600FEEA63 /* MBOBaseView.m in Sources */,
+				684F74711AD612A200FEEA63 /* MoreModuleViewController.m in Sources */,
 				684F74491AD60C5B00FEEA63 /* Global.m in Sources */,
 				684F745D1AD60C7600FEEA63 /* PaomaView.m in Sources */,
 				684F741F1AD60BAC00FEEA63 /* MBOHeaderfile.h in Sources */,
@@ -439,7 +445,7 @@
 				684F745C1AD60C7600FEEA63 /* ShowAlertView.m in Sources */,
 				684F74641AD60C8D00FEEA63 /* MBOBaseViewController.m in Sources */,
 				684F744B1AD60C5B00FEEA63 /* MemoModel.m in Sources */,
-				684F74691AD60CAF00FEEA63 /* MenuModuleViewController.m in Sources */,
+				684F74691AD60CAF00FEEA63 /* ShowModuleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +574,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = " arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -579,6 +586,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = " arm64 armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -8,7 +8,7 @@
 
 #import "MBOLotteryViewController.h"
 
-@interface MenuModuleViewController : MBOLotteryViewController
+@interface ShowModuleViewController : MBOLotteryViewController
 //欢迎页
 - (void)startWolcomePage:(void (^)(UIImageView *welcomeImageView))completiocn;
 @end

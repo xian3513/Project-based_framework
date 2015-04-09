@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 Duobao. All rights reserved.
 //
 
-#import "MenuModuleViewController.h"
+#import "ShowModuleViewController.h"
 #import "UIImageView+WebCache.h"
-@interface MenuModuleViewController ()
+@interface ShowModuleViewController ()
 
 @end
 
-@implementation MenuModuleViewController {
+@implementation ShowModuleViewController {
  UIImageView *welcomeImageView;
 }
 
