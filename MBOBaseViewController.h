@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
-#import "MBOHeaderfile.m"
+#import "MBOHeaderfile.h"
 
 #import "MBOHTTPRequest.h"
 #import "MBOModelFactory.h"

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "NSString+Extension.h"
 @interface NSString (Extension)
 - (CGSize)sizeWithSystemFontMaxSize:(CGSize)maxSize;

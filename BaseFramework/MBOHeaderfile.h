@@ -1,6 +1,6 @@
 //
 //  MBOHeaderfile.m
-//  duobao
+//  
 //
 //  Created by kt on 15/3/19.
 //  Copyright (c) 2015年 Duobao. All rights reserved.

@@ -91,11 +91,6 @@ didFinishDownloadingToURL:(NSURL *)location {
     
     if(success){
         dispatch_async(dispatch_get_main_queue(), ^{
-            UIImage *image = [UIImage imageWithContentsOfFile:[destination path]];
-            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
-            UIWindow *window = [UIApplication sharedApplication].keyWindow;
-            [window addSubview:imageView];
-            imageView.image = image;
             NSLog(@"destination:%@",[destination path]);
             self.HTTPSuccess([NSData dataWithContentsOfFile:[destination path]]);
         });

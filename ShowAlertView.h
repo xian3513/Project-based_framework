@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MBOHeaderfile.m"
+#import "MBOHeaderfile.h"
 #import "NSString+Extension.h"
 @interface ShowAlertView : NSObject
 //@property (nonatomic,assign,readonly) BOOL indicatorIsAnimating;

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MBOHeaderfile.m"
+#import "MBOHeaderfile.h"
 @interface Global : NSObject  {
     @private
      NSDictionary *lotteryDateData;

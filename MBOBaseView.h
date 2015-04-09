@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBOHeaderfile.m"
+#import "MBOHeaderfile.h"
 @interface MBOBaseView : UIView
 
 @end

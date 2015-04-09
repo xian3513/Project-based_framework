@@ -8,7 +8,6 @@
 
 #import "MBOBaseView.h"
 #import "Global.h"
-#import "LotteryDataModel.h"
 @interface MBOSecondPackageView : MBOBaseView
 @property (nonatomic,strong,readonly) Global *global;
 @end

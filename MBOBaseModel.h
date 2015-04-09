@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MBOHeaderfile.m"
+#import "MBOHeaderfile.h"
 #import <objc/runtime.h>
 @interface MBOBaseModel : NSObject
 
