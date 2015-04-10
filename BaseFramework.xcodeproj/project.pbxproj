@@ -34,6 +34,7 @@
 		684F74651AD60C8D00FEEA63 /* MBOLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74631AD60C8D00FEEA63 /* MBOLotteryViewController.m */; };
 		684F74691AD60CAF00FEEA63 /* MenuModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74681AD60CAF00FEEA63 /* MenuModuleViewController.m */; };
 		684F746C1AD60E5700FEEA63 /* MBOModelFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F746B1AD60E5700FEEA63 /* MBOModelFactory.m */; };
+		687F18F71AD778B20054397E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 687F18F61AD778B20054397E /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		684F74681AD60CAF00FEEA63 /* MenuModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModuleViewController.m; sourceTree = "<group>"; };
 		684F746A1AD60E5700FEEA63 /* MBOModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBOModelFactory.h; sourceTree = "<group>"; };
 		684F746B1AD60E5700FEEA63 /* MBOModelFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBOModelFactory.m; sourceTree = "<group>"; };
+		687F18F51AD778B20054397E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		687F18F61AD778B20054397E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +231,8 @@
 		684F74271AD60C0400FEEA63 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				687F18F51AD778B20054397E /* Reachability.h */,
+				687F18F61AD778B20054397E /* Reachability.m */,
 				684F74281AD60C1000FEEA63 /* BreakHTTP.h */,
 				684F74291AD60C1000FEEA63 /* BreakHTTP.m */,
 				684F742A1AD60C1000FEEA63 /* HTTPRequest.h */,
@@ -427,6 +432,7 @@
 				684F74651AD60C8D00FEEA63 /* MBOLotteryViewController.m in Sources */,
 				684F744A1AD60C5B00FEEA63 /* Global+write.m in Sources */,
 				684F73FE1AD60B9C00FEEA63 /* AppDelegate.m in Sources */,
+				687F18F71AD778B20054397E /* Reachability.m in Sources */,
 				684F73FB1AD60B9C00FEEA63 /* main.m in Sources */,
 				684F74261AD60BFD00FEEA63 /* NSString+Extension.m in Sources */,
 				684F74391AD60C2E00FEEA63 /* MBOURLSession.m in Sources */,
@@ -635,6 +641,7 @@
 				684F741A1AD60B9D00FEEA63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		684F741B1AD60B9D00FEEA63 /* Build configuration list for PBXNativeTarget "BaseFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +650,7 @@
 				684F741D1AD60B9D00FEEA63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
