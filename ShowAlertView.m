@@ -20,7 +20,7 @@
     if(!share) {
         UIWindow * window = [UIApplication sharedApplication].keyWindow;
         share = [[ShowAlertView alloc]init];
-        share->showTime = 3.0f;
+        share->showTime = 3.5f;
         
         UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
         //设置显示样式,见UIActivityIndicatorViewStyle的定义
@@ -114,7 +114,7 @@
                                                           forKey:NSFontAttributeName];
     
     CGSize textSize = [text sizeWithAttributes:fontAttr];
-    CGSize layerSize = CGSizeMake(textSize.width * 1.6f, textSize.height * 1.1f);
+    CGSize layerSize = CGSizeMake(textSize.width * 1.2f, textSize.height * 1.1f);
     if (layerSize.width >= share->rootLayer.frame.size.width) {
         layerSize = CGSizeMake(share->rootLayer.frame.size.width * 0.8f, CGFLOAT_MAX);
         NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin;
