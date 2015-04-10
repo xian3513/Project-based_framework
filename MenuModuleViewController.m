@@ -13,14 +13,35 @@
 @end
 
 @implementation MenuModuleViewController {
- UIImageView *welcomeImageView;
+    UIImageView *welcomeImageView;
+    Reachability *XISReachability;
 }
 
+- (id)init {
+    if(self = [super init]) {
+        //reachability
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+        if(!XISReachability) {
+            XISReachability = [Reachability reachabilityWithHostName:@"www.google.com"];
+        }
+        [XISReachability startNotifier];
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+#pragma - 欢迎页
 - (void)startWolcomePage:(void (^)(UIImageView *))completiocn {
     //欢迎页
         HTTPRequest *request = [[HTTPRequest alloc]init];
@@ -55,10 +76,47 @@
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma -  网络监测
+- (void)reachabilityChanged:(NSNotification *)note {
+    Reachability* curReach = [note object];
+    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+    [self updateInterfaceWithReachability:curReach];
 }
+
+- (void)updateInterfaceWithReachability:(Reachability *)reachability {
+    if(reachability == XISReachability) {
+        NetworkStatus netStatus = [reachability currentReachabilityStatus];
+        switch (netStatus) {
+            case NotReachable: {
+                [self XISViewControllerNotReachable];
+                break;
+            }
+            case ReachableViaWiFi: {
+                [self XISViewControllerReachableViaWiFi];
+                break;
+            }
+            case ReachableViaWWAN: {
+                [self XISViewControllerReachableViaWWAN];
+                break;
+            }
+        }
+    }
+}
+
+- (void)XISViewControllerNotReachable {
+    [ShowAlertView showToastViewWithText:@"网络连接中断,请检查网络"];
+}
+
+- (void)XISViewControllerReachableViaWiFi {
+    [ShowAlertView showToastViewWithText:@"当前网络状态为:WIFI"];
+}
+
+- (void)XISViewControllerReachableViaWWAN {
+    [ShowAlertView showToastViewWithText:@"当前网络状态为:蜂窝数据"];
+}
+
+
+
 
 /*
 #pragma mark - Navigation

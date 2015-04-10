@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 #import "MBOHeaderfile.h"
-#import "Reachability.h"
+
 #import "MBOHTTPRequest.h"
 #import "MBOModelFactory.h"
 #import "MBOBaseModel.h"
@@ -39,7 +39,7 @@
 @property (nonatomic,strong,readonly) Global *global;
 @property (nonatomic,strong,readonly) PaomaView *paomaView;//可以考虑是否把该对象也去掉??
 @property (nonatomic,assign,readonly) CGFloat paomaHeight;
-@property (nonatomic,strong) Reachability *reachability;
+
 
 
 

@@ -7,6 +7,7 @@
 //
 
 #import "MBOLotteryViewController.h"
+#import "Reachability.h"
 
 @interface MenuModuleViewController : MBOLotteryViewController
 //欢迎页
