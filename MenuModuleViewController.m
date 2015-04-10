@@ -104,15 +104,15 @@
 }
 
 - (void)XISViewControllerNotReachable {
-    [ShowAlertView showToastViewWithText:@"网络连接中断,请检查网络"];
+    NSLog(@"网络连接中断,请检查网络");
 }
 
 - (void)XISViewControllerReachableViaWiFi {
-    [ShowAlertView showToastViewWithText:@"当前网络状态为:WIFI"];
+    NSLog(@"当前网络状态为:WIFI");
 }
 
 - (void)XISViewControllerReachableViaWWAN {
-    [ShowAlertView showToastViewWithText:@"当前网络状态为:蜂窝数据"];
+    NSLog(@"当前网络状态为:蜂窝数据");
 }
 
 
