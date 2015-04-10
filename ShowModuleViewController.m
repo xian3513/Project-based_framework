@@ -18,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //[ShowAlertView showToastViewWithText:@"hahahahahah"];
     // Do any additional setup after loading the view.
+}
+
+- (void)XISViewControllerReachableViaWWAN {
+
 }
 
 - (void)startWolcomePage:(void (^)(UIImageView *))completiocn {

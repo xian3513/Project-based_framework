@@ -39,7 +39,7 @@
 @property (nonatomic,strong,readonly) Global *global;
 @property (nonatomic,strong,readonly) PaomaView *paomaView;//可以考虑是否把该对象也去掉??
 @property (nonatomic,assign,readonly) CGFloat paomaHeight;
-@property (nonatomic,assign) Reachability *reachability;
+@property (nonatomic,strong) Reachability *reachability;
 
 
 

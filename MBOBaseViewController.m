@@ -37,10 +37,21 @@
     
     //reachability
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
-    if(!self.reachability) {
-        self.reachability = [Reachability reachabilityWithHostName:@"www.google.com"];
+    self.reachability = [Reachability reachabilityWithHostName:@"www.google.com"];
+    switch ([self.reachability currentReachabilityStatus]) {
+        case NotReachable:
+            // 没有网络连接
+            [self XISViewControllerNotReachable];
+            break;
+        case ReachableViaWWAN:
+            [self XISViewControllerReachableViaWiFi];
+            // 使用3G网络
+            break;
+        case ReachableViaWiFi:
+            [self XISViewControllerReachableViaWWAN];
+            // 使用WiFi网络
+            break;
     }
-    [self.reachability startNotifier];
     //跑马灯
     
     _paomaView = [[PaomaView alloc]initWithFrame:CGRectMake(0, statusBarAndNavBarHeight, screenWidth, paomaHeight)];
@@ -88,15 +99,15 @@
 }
 
 - (void)XISViewControllerNotReachable {
-    [ShowAlertView showToastViewWithText:@"网络连接中断,请检查网络"];
+    NSLog(@"网络连接中断,请检查网络");
 }
 
 - (void)XISViewControllerReachableViaWiFi {
-    [ShowAlertView showToastViewWithText:@"当前网络状态为:WIFI"];
+    NSLog(@"当前网络状态为:WIFI");
 }
 
 - (void)XISViewControllerReachableViaWWAN {
-    [ShowAlertView showToastViewWithText:@"当前网络状态为:蜂窝数据"];
+    NSLog(@"当前网络状态为:蜂窝数据");
 }
 
 #pragma - base

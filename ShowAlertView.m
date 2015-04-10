@@ -40,22 +40,6 @@
 }
 #pragma -- toastView
 + (void)showToastViewWithText:(NSString *)text {
-//     UIWindow * window = [UIApplication sharedApplication].keyWindow;
-//    ShowAlertView *share = [ShowAlertView share];
-//    CGSize size = [text sizeWithSystemFontMaxSize:CGSizeMake(300, 30)];
-//    CGPoint point = CGPointMake(0, screenHeight*0.75);
-//    point.x = window.center.x-size.width/2;
-//    NSLog(@"1");
-//    share->textLab.frame = CGRectMake(point.x, point.y, size.width, size.height);
-//    share->textLab.text = text;
-//    [window addSubview:share->textLab];
-//        dispatch_time_t interval = dispatch_time(DISPATCH_TIME_NOW, share->showTime*NSEC_PER_SEC);
-//        dispatch_queue_t queue = dispatch_get_main_queue();
-//        dispatch_after(interval, queue, ^{
-//            [share->textLab removeFromSuperview];
-//            NSLog(@"2");
-//        });
-
     UIWindow * window = [UIApplication sharedApplication].keyWindow;
     NSArray * windows = [UIApplication sharedApplication].windows;
     if ([windows count] > 1) {
@@ -66,7 +50,6 @@
             }
         }
     }
-    
     UIViewController * rootVC = window.rootViewController;
     [self showToastText:text inViewController:rootVC];
     
