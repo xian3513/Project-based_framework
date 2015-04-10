@@ -41,6 +41,13 @@
 @property (nonatomic,assign,readonly) CGFloat paomaHeight;
 @property (nonatomic,assign) Reachability *reachability;
 
+
+
+//网络监测
+- (void)XISViewControllerNotReachable;
+- (void)XISViewControllerReachableViaWiFi;
+- (void)XISViewControllerReachableViaWWAN;
+
 //跑马灯相关
 - (void)paomaViewStartShowBeforeWithDuration:(NSTimeInterval)duration beforeAnimation:(void(^)())before inView:(UIView *)view;
 - (void)paomaVIewStopShowWithDuration:(NSTimeInterval)duration completion:(void(^)())completion;
