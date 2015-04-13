@@ -20,7 +20,9 @@ typedef enum {
 @property (nonatomic,copy) NSString *showText;
 @property (nonatomic,assign) CGFloat ratio;
 
-- (void)showInView:(UIView *)view;
-- (void)stopShow;
+- (void)cardSwitchAnimation;
+- (void)cardSwitchStop;
+- (void)moveInView:(UIView *)view;
+- (void)stopMove;
 
 @end

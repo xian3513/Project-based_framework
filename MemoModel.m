@@ -28,6 +28,11 @@
     return self;
 }
 
+- (void)dealloc {
+    Global *model = [Global share];
+    [model removeObserver:self forKeyPath:@"lotteryDateDataIsHave" context:nil];
+}
+
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if([keyPath isEqualToString:@"lotteryDateDataIsHave"]) {
         NSLog(@"%@",keyPath);

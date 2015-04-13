@@ -7,11 +7,30 @@
 //
 
 #import "PaomaView.h"
+#import <QuartzCore/QuartzCore.h>
+
+@interface CardSwitchView : UIView
+
+@end
+@implementation CardSwitchView
+- (id)initWithFrame:(CGRect)frame {
+    if(self = [super initWithFrame:frame]) {
+        
+    }
+    return self;
+}
+
+@end
+
 @implementation PaomaView {
     CGFloat ratio;
     CGFloat textWidth;
     UILabel *labelShow;
+    
+    NSTimer *paomaTimer;
+    CardSwitchView *cardView;
 }
+
 @synthesize ratio;
 
 - (id)initWithFrame:(CGRect)frame {
@@ -23,7 +42,7 @@
     return self;
 }
 
-- (void)showInView:(UIView *)view {//注意先后顺序
+- (void)moveInView:(UIView *)view {//注意先后顺序
     //width:5272  ratio:27.657143  width/ratio:190.619834
 
     labelShow.text = (self.showText!=nil?self.showText:@"据洪磊介绍，亚美尼亚总统萨尔基相、奥地利总统菲舍尔、印尼总统佐科、尼泊尔总统亚达夫、斯里兰卡总统西里塞纳、乌干达总统穆塞韦尼、赞比亚总统伦古、澳大利亚总督科斯格罗夫、哈萨克斯坦总理马西莫夫、马来西亚总理纳吉布、荷兰首相吕特、卡塔尔首相阿卜杜拉、瑞典首相勒文、俄罗斯第一副总理舒瓦洛夫、泰国副总理兼外长塔纳萨等外国领导人将应邀来华出席年会。博鳌亚洲论坛秘书长周文重17日也向媒体透露，出席本届年会的其他国家领导人规模将超过历届年会。这充分显示了各国领导人对此次论坛的重视程度。那么今年习近平发表主旨演讲将涉及哪些内容，这次博鳌论坛将有哪些看点？将会给亚洲乃至世界经济发展带来哪些新的契机？为此，人民网记者今日采访了相关专家。");
@@ -49,7 +68,7 @@
     
 }
 
-- (void)stopShow {
+- (void)stopMove {
     self.hidden = YES;
     NSInteger width = labelShow.frame.size.width;
     textWidth = width;
@@ -58,12 +77,35 @@
     labelShow.frame = frame;
     self.hidden = NO;
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+#warning 未完成
+- (void)cardSwitchAnimation {
+    if(!cardView) {
+        cardView = [[CardSwitchView alloc]initWithFrame:self.frame];
+        [self addSubview:cardView];
+    }
+    
+    [self startAnimationWithDuration:1 completion:^(){
+        
+        
+    }];
 }
-*/
+
+- (void)cardSwitchStop {
+    
+}
+
+- (void)startAnimationWithDuration:(NSInteger)duration completion:(void(^)())completion {
+    CATransition *animation = [CATransition animation];
+    animation.delegate = self;
+    animation.duration = duration;
+    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.type = kCATransitionReveal;
+    animation.subtype = kCATransitionFromTop;
+    NSUInteger card = [[self subviews] indexOfObject:cardView];
+    [self exchangeSubviewAtIndex:card withSubviewAtIndex:card];
+    [[self layer] addAnimation:animation forKey:@"animation"];
+    
+}
 
 @end
