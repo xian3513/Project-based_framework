@@ -86,12 +86,12 @@
     [UIView animateWithDuration:duration animations:^{
         before();
     } completion:^(BOOL isFinished){
-        [self.paomaView showInView:view];
+        [self.paomaView moveInView:view];
     }];
 }
 
 - (void)paomaVIewStopShowWithDuration:(NSTimeInterval)duration completion:(void (^)())completion {
-    [self.paomaView stopShow];
+    [self.paomaView stopMove];
     [UIView animateWithDuration:duration animations:^(){
         completion();
     }];

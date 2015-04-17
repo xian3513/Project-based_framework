@@ -13,6 +13,7 @@
 
 @property (nonatomic,copy) NSString *url;
 @property (nonatomic,copy) NSString *identifer;
+@property (nonatomic,copy) NSString *HTTPTheWay;
 @property (nonatomic,strong) NSMutableDictionary *httpHeaders;
 @property (nonatomic,strong) NSMutableDictionary *httpParameters;
 @property (nonatomic,assign) BOOL hidesShowViewWhenHTTP;

@@ -18,6 +18,11 @@
     }
     return self;
 }
+
+- (NSString *)HTTPTheWay {
+    return [self validateWay:_HTTPTheWay];
+}
+
 - (NSData *)HTTPTestData {
     NSLog(@"/*********   这是测试数据   **********/");
     return nil;
@@ -88,6 +93,11 @@
     return props;
 }
 
+- (NSString *)validateWay:(NSString *)way {
+    NSString* number=@"^[postPOST]{4}+$";
+    NSPredicate *numberPre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",number];
+    return ([numberPre evaluateWithObject:way]?@"post":@"get");
+}
 //+ (BOOL)resolveInstanceMethod:(SEL)aSEL
 //{
 //     NSLog(@"please finish the method: [%@]",NSStringFromSelector(aSEL));
