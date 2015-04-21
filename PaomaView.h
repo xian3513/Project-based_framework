@@ -6,14 +6,14 @@
 //  Copyright (c) 2015年 Duobao. All rights reserved.
 //
 
-#import "MBOBaseView.h"
+#import "XISBaseView.h"
 
 typedef enum {
     moveToleft=0,
     moveToRight
 } moveDirection;
 
-@interface PaomaView : MBOBaseView
+@interface PaomaView : XISBaseView
 
 @property (nonatomic,assign) moveDirection direction;
 @property (nonatomic,strong) UIColor *textColor;

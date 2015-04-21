@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBOHeaderfile.h"
-@interface MBOBaseView : UIView
+#import <objc/runtime.h>
+#import "XISHeaderfile.h"
+@interface XISBaseView : UIView
 
+- (void)setTapActionWithBlock:(void(^)(void))block;
 @end

@@ -15,6 +15,7 @@
 @implementation MenuModuleViewController {
     UIImageView *welcomeImageView;
     Reachability *XISReachability;
+    XISBaseView *base;
 }
 
 - (id)init {

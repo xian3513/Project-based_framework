@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 Duobao. All rights reserved.
 //
 
-#import "MBOBaseView.h"
+#import "XISBaseView.h"
 #import "Global.h"
-@interface MBOSecondPackageView : MBOBaseView
+@interface MBOSecondPackageView : XISBaseView
 @property (nonatomic,strong,readonly) Global *global;
 @end

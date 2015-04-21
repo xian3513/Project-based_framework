@@ -13,7 +13,7 @@
 		684F74061AD60B9D00FEEA63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684F74051AD60B9D00FEEA63 /* Images.xcassets */; };
 		684F74091AD60B9D00FEEA63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684F74071AD60B9D00FEEA63 /* LaunchScreen.xib */; };
 		684F74151AD60B9D00FEEA63 /* BaseFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74141AD60B9D00FEEA63 /* BaseFrameworkTests.m */; };
-		684F741F1AD60BAC00FEEA63 /* MBOHeaderfile.h in Sources */ = {isa = PBXBuildFile; fileRef = 684F741E1AD60BAC00FEEA63 /* MBOHeaderfile.h */; };
+		684F741F1AD60BAC00FEEA63 /* XISHeaderfile.h in Sources */ = {isa = PBXBuildFile; fileRef = 684F741E1AD60BAC00FEEA63 /* XISHeaderfile.h */; };
 		684F74261AD60BFD00FEEA63 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74251AD60BFD00FEEA63 /* NSString+Extension.m */; };
 		684F74301AD60C1000FEEA63 /* BreakHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74291AD60C1000FEEA63 /* BreakHTTP.m */; };
 		684F74311AD60C1000FEEA63 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F742B1AD60C1000FEEA63 /* HTTPRequest.m */; };
@@ -26,7 +26,7 @@
 		684F744B1AD60C5B00FEEA63 /* MemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74421AD60C5B00FEEA63 /* MemoModel.m */; };
 		684F744C1AD60C5B00FEEA63 /* MBOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74441AD60C5B00FEEA63 /* MBOBaseModel.m */; };
 		684F74511AD60C6400FEEA63 /* SelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74501AD60C6400FEEA63 /* SelectView.m */; };
-		684F745B1AD60C7600FEEA63 /* MBOBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74541AD60C7600FEEA63 /* MBOBaseView.m */; };
+		684F745B1AD60C7600FEEA63 /* XISBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74541AD60C7600FEEA63 /* XISBaseView.m */; };
 		684F745C1AD60C7600FEEA63 /* ShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74561AD60C7600FEEA63 /* ShowAlertView.m */; };
 		684F745D1AD60C7600FEEA63 /* PaomaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F74581AD60C7600FEEA63 /* PaomaView.m */; };
 		684F745E1AD60C7600FEEA63 /* MBOSecondPackageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 684F745A1AD60C7600FEEA63 /* MBOSecondPackageView.m */; };
@@ -59,7 +59,7 @@
 		684F740E1AD60B9D00FEEA63 /* BaseFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		684F74131AD60B9D00FEEA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684F74141AD60B9D00FEEA63 /* BaseFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFrameworkTests.m; sourceTree = "<group>"; };
-		684F741E1AD60BAC00FEEA63 /* MBOHeaderfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBOHeaderfile.h; sourceTree = "<group>"; };
+		684F741E1AD60BAC00FEEA63 /* XISHeaderfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISHeaderfile.h; sourceTree = "<group>"; };
 		684F74241AD60BFD00FEEA63 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		684F74251AD60BFD00FEEA63 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		684F74281AD60C1000FEEA63 /* BreakHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreakHTTP.h; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		684F74441AD60C5B00FEEA63 /* MBOBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBOBaseModel.m; sourceTree = "<group>"; };
 		684F744F1AD60C6400FEEA63 /* SelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectView.h; sourceTree = "<group>"; };
 		684F74501AD60C6400FEEA63 /* SelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectView.m; sourceTree = "<group>"; };
-		684F74531AD60C7600FEEA63 /* MBOBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBOBaseView.h; sourceTree = "<group>"; };
-		684F74541AD60C7600FEEA63 /* MBOBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBOBaseView.m; sourceTree = "<group>"; };
+		684F74531AD60C7600FEEA63 /* XISBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISBaseView.h; sourceTree = "<group>"; };
+		684F74541AD60C7600FEEA63 /* XISBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISBaseView.m; sourceTree = "<group>"; };
 		684F74551AD60C7600FEEA63 /* ShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAlertView.h; sourceTree = "<group>"; };
 		684F74561AD60C7600FEEA63 /* ShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAlertView.m; sourceTree = "<group>"; };
 		684F74571AD60C7600FEEA63 /* PaomaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaomaView.h; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			children = (
 				684F73FC1AD60B9C00FEEA63 /* AppDelegate.h */,
 				684F73FD1AD60B9C00FEEA63 /* AppDelegate.m */,
-				684F741E1AD60BAC00FEEA63 /* MBOHeaderfile.h */,
+				684F741E1AD60BAC00FEEA63 /* XISHeaderfile.h */,
 				684F74201AD60BBB00FEEA63 /* Tools */,
 				684F74211AD60BC100FEEA63 /* Models */,
 				684F74221AD60BC700FEEA63 /* Views */,
@@ -283,8 +283,8 @@
 		684F74521AD60C6E00FEEA63 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				684F74531AD60C7600FEEA63 /* MBOBaseView.h */,
-				684F74541AD60C7600FEEA63 /* MBOBaseView.m */,
+				684F74531AD60C7600FEEA63 /* XISBaseView.h */,
+				684F74541AD60C7600FEEA63 /* XISBaseView.m */,
 				684F74551AD60C7600FEEA63 /* ShowAlertView.h */,
 				684F74561AD60C7600FEEA63 /* ShowAlertView.m */,
 				684F74571AD60C7600FEEA63 /* PaomaView.h */,
@@ -422,10 +422,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684F745B1AD60C7600FEEA63 /* MBOBaseView.m in Sources */,
+				684F745B1AD60C7600FEEA63 /* XISBaseView.m in Sources */,
 				684F74491AD60C5B00FEEA63 /* Global.m in Sources */,
 				684F745D1AD60C7600FEEA63 /* PaomaView.m in Sources */,
-				684F741F1AD60BAC00FEEA63 /* MBOHeaderfile.h in Sources */,
+				684F741F1AD60BAC00FEEA63 /* XISHeaderfile.h in Sources */,
 				684F746C1AD60E5700FEEA63 /* MBOModelFactory.m in Sources */,
 				684F74311AD60C1000FEEA63 /* HTTPRequest.m in Sources */,
 				684F743A1AD60C2E00FEEA63 /* UIImageView+WebCache.m in Sources */,
