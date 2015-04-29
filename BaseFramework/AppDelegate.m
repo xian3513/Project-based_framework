@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    ///ddddd
+    ///xis    sss
     NSDictionary * attr = [NSDictionary dictionaryWithObject:[UIColor whiteColor]forKey:NSForegroundColorAttributeName];
     [[UINavigationBar appearance] setTitleTextAttributes:attr];
     [application setStatusBarStyle:UIStatusBarStyleLightContent];
